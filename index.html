@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        header {
+            background-image: url(galactic.jpg);
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size:cover;
+            background-position: center ;    
+        }
+        header h1{
+            color: yellow;
+            text-shadow: 3px 3px 5px black;
+            font-size: 3em;
+        }
+        header h2{
+            color: white;
+            text-shadow: 3px 3px 5px black;
+        }
+        caja-central{
+            text-align: center;
+        }
+        nav {
+            background-color: purple;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 40px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: red;
+        }
+        #contenedor-quienes{
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        #contenedor-quienes #izquerda{
+            width: 50%;;
+        }     
+        #contenedor-quienes #derecha{
+            width: 50%;
+            
+        }     
+        .titulo{
+            text-align: center;
+            color: blue;
+        }
+         section#quienes-somos{
+            padding: 20px;
+            background-color: grey;
+        
+        }
+        #opclientes{
+            background-color:lightgreen;
+            padding: 10px
+        }
+        #contenedor-clientes{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+           background-color: white;
+           padding-bottom: 40px;
+        
+           
+        }
+        #contenedor-clientes .cliente img{
+            text-align: center;
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            padding: 15px
+        }
+        
+       section#opclientes #arriba {
+           text-align: center;
+           padding: 20px;
+           
+        }
+        section#opclientes p{
+            font-size: 0.9em;
+            text-align: center;
+            font-style: italic;
+            
+        }
+        footer {
+            background-color: grey;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="caja-central">
+            <h1>Astral Power</h1>
+            <h2>Desata tu fuerza infinita</h2>
+        </div>
+       
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Quienes somos</a>
+        <a href="#">Donde estamos</a>
+        <a href="#">Contacto</a>
+        </ul>
+    </nav>
+    <section id="quienes-somos">
+        <h1 class="titulo">Quienes somos</h1>
+        <div id="contenedor-quienes">
+            <div id="izquierda">
+                <img src="monitoresgym.jpeg" alt="">
+            </div>
+            <div id="derecha">
+                <h1>Un equipo GALÁCTICO</h1>
+                <p>En Astral Power somos una comunidad apasionada por el bienestar físico y mental. Nos dedicamos a ofrecer un espacio moderno y acogedor donde cada persona puede superar sus límites. Contamos con un equipo de monitores altamente cualificados y comprometidos, que ofrecen entrenamientos personalizados adaptados a las necesidades de cada miembro. .</p>
+            </div>
+        </div>
+    </section>
+    <section id="opclientes">
+        <div id="arriba"><h1 class="titulo">Opiniones de nuestros clientes</h1></div>
+        
+        <div id="contenedor-clientes">
+            <div class="cliente">
+                <img src="cliente1.jpeg" alt="">
+                <p>"La mejor maquinaria de la galaxia"</p>
+            </div>
+            <div class="cliente">
+                <img src="cliente2.jpeg" alt="">
+                <p>"Los mejores espejos existentes"</p>
+            </div>
+            <div class="cliente">
+                <img src="cliente3.jpeg" alt="">
+                <p>"La gente más fuerte de la Tierra"</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>Enlaces</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div>
+            <h2>Estamos en</h2>
+          <p>Calle Toledo</p>
+          <p>13003 Ciudad Real</p>
+        </div>
+        <div>
+            <h2>Email</h2>
+            <p>astralpower@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
